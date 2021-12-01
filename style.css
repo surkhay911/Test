@@ -1,0 +1,49 @@
+*{
+    height: 50vh;
+}
+
+.home{
+    display: flex;
+    
+}
+
+
+.flex1{
+    flex: 0 1 50%;
+    background-color: black;
+    opacity: 0.1;
+}
+
+.flex1:hover{
+    opacity: 1;
+}
+
+.flex2{
+    flex: 0 1 50%;
+    background-color: blue;
+    opacity: 0.1;
+}
+
+.flex2:hover{
+    opacity: 1;
+}
+
+.flex3{
+    flex: 0 1 50%;
+    background-color: red;
+    opacity: 0.1;
+}
+
+.flex3:hover{
+    opacity: 1;
+}
+
+.flex4{
+    flex: 0 1 50%;
+    background-color: yellow;
+    opacity: 0.1;
+}
+
+.flex4:hover{
+    opacity: 1;
+}
