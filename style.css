@@ -1,10 +1,8 @@
 * {
-  height: 49vh;
+  height: 50vh;
 }
 
 .home {
-  /* display: flex; */
-  /* justify-content: space-between; */
   display: flex;
   flex-wrap: wrap;
   flex: 0 1 auto;
@@ -13,10 +11,10 @@
 /* entire container, keeps perspective */
 .flip-container {
   perspective: 1000px;
-  flex: 0 1 49.8%;
+  flex: 0 1 auto;
   margin: 1px;
-  /* min-width: calc(50vw - 2px); */
-  /* min-height: calc(50vh - 2px); */
+  min-width: calc(50vw - 10px);
+  min-height: calc(50vh - 10px);
   /* flex-wrap: wrap; */
 }
 /* flip the pane when hovered */
