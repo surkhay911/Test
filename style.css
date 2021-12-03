@@ -1,28 +1,42 @@
 * {
-  height: 100vh;
+  height: 49vh;
 }
 
 .home {
+  /* display: flex; */
+  /* justify-content: space-between; */
   display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
 }
 
 /* entire container, keeps perspective */
 .flip-container {
   perspective: 1000px;
+  flex: 0 1 49.8%;
+  margin: 1px;
+  /* min-width: calc(50vw - 2px); */
+  /* min-height: calc(50vh - 2px); */
+  /* flex-wrap: wrap; */
 }
 /* flip the pane when hovered */
 .flip-container:hover .flipper {
   transform: rotateY(180deg);
 }
 
-.flip-container,
+/* .flip-container, */
 .front,
-.front1,
 .back,
-.back1 {
+.front1,
+.back1,
+.front2,
+.back2,
+.front3,
+.back3 {
   /* flex: 0 1 50%; */
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
+  /* flex-wrap: wrap; */
   /* margin: 10px; */
 }
 
@@ -30,8 +44,8 @@
 .flipper {
   transition: 1.5s;
   transform-style: preserve-3d;
-  width: 200px;
-  height: 200px;
+  /* width: 200px; */
+  /* height: 200px; */
 }
 
 .front,
@@ -50,8 +64,10 @@
 .front {
   /* z-index: 2; */
   background-color: brown;
-  width: 200px;
-  height: 200px;
+  /* width: 200px; */
+  /* height: 200px; */
+  background-image: url(https://img2.akspic.ru/previews/5/7/1/6/6/166175/166175-gubka_bob-multfilm-multik-bikini_bottom-nikelodeon-500x.jpg);
+  background-size: contain;
 }
 
 /* back, initially hidden pane */
@@ -60,45 +76,49 @@
   /* width: auto; */
   background-color: aqua;
   transform: rotateY(180deg);
-  width: 200px;
-  height: 200px;
+  /* width: 200px; */
+  /* height: 200px; */
+  background-image: url(https://icdn.lenta.ru/images/2021/04/27/16/20210427163138131/square_320_c09ebae17387b7d6eeb9fa0d42afe5ee.jpg);
+  background-size: contain;
 }
 
 .front1 {
   background-color: forestgreen;
-  width: 200px;
-  height: 200px;
+  /* width: 200px; */
+  /* height: 200px; */
 }
 
 .back1 {
   background-color: fuchsia;
   transform: rotateY(180deg);
-  width: 200px;
-  height: 200px;
+  /* width: 200px; */
+  /* height: 200px; */
+  background-image: url(https://mirpozitiva.ru/wp-content/uploads/2019/11/1472042719_15.jpg);
+  background-size: contain;
 }
 
 .front2 {
   background-color: gold;
-  width: 200px;
-  height: 200px;
+  /* width: 200px; */
+  /* height: 200px; */
 }
 
 .back2 {
   background-color: aquamarine;
   transform: rotateY(180deg);
-  width: 200px;
-  height: 200px;
+  /* width: 200px; */
+  /* height: 200px; */
 }
 
 .front3 {
   background-color: gray;
-  width: 200px;
-  height: 200px;
+  /* width: 200px; */
+  /* height: 200px; */
 }
 
 .back3 {
   background-color: ghostwhite;
   transform: rotateY(180deg);
-  width: 200px;
-  height: 200px;
+  /* width: 200px; */
+  /* height: 200px; */
 }
